@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Member({ membersActive }) {
-    const { name, img, phone, email, mrn, userName, id } = membersActive
+    const { name, img, phone, email, mrn, userName, id, password } = membersActive
     return (
         <>
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -18,14 +18,14 @@ export default function Member({ membersActive }) {
                         <div className="font-normal text-gray-500 text-[10px] md:text-[1rem]">{email} </div>
                     </div>
                 </th>
-                <td className="px-2 md:px-6 py-4 text-[11px] md:text-[1rem]">
-                    {mrn}
+                <td className="ps-6 md:px-6 py-4 text-[11px] md:text-[1rem]">
+                    {password}
                 </td>
                 <td className='flex  md:text-[1rem] w-[100%]'>
-                    <div className="hidden md:flex px-2 md:px-0 md:pb-6 w-[60%]">
-                        {name}
+                    <div className="hidden md:flex px-2 md:px-0 md:pb-6 w-[50%]">
+                        {mrn}
                     </div>
-                    <div className="hidden md:flex px-6 w-[40%] ">
+                    <div className="hidden md:flex px-6 w-[50%] ">
                         {phone}
                     </div>
                 </td>

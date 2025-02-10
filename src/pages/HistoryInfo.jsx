@@ -45,13 +45,13 @@ export default function HistoryInfo() {
                             NOMBRE de usuario
                         </th>
                         <th className="px-6 py-3">
-                            CEDULA
+                            Contraseña
                         </th>
                         <th className='flex w-[100%]'>
-                            <div className="hidden md:flex px-0 py-3 w-[60%]">
-                                NOMBRE
+                            <div className="hidden md:flex px-0 py-3 w-[50%]">
+                                cedula
                             </div>
-                            <div className="hidden md:flex px-6 py-3 w-[40%]">
+                            <div className="hidden md:flex px-6 py-3 w-[50%]">
                                 Celular
                             </div>
                         </th>

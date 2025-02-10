@@ -4,7 +4,7 @@ export const historyFamily = [
         name: "Guillermo Eduardo Sangerman Cruz",
         mrn: "026-0985-5132",
         userName: "sangermanC8",
-        passsword: "123456",
+        password: "123456",
         email: "historyFamilyAnterquera@gmail.com",
         phone: "951-192-1999",
         img: "/image-members/guillermo-sangerman.jpg"
@@ -14,7 +14,7 @@ export const historyFamily = [
         name: "Tania Martinez Mendoza",
         mrn: "026-0985-5132",
         userName: "tanis",
-        passsword: "123456",
+        password: "123456",
         email: "historyFamilyAnterquera@gmail.com",
         phone: "951-164-9813",
         img: "/image-members/guillermo-sangerman.jpg"
