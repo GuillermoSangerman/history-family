@@ -44,11 +44,11 @@ export default function HistoryInfo() {
                         <th className="px-6 py-3">
                             CEDULA
                         </th>
-                        <th className='flex justify-around'>
-                            <div className="hidden md:flex px-6 py-3">
+                        <th className='flex w-[100%]'>
+                            <div className="hidden md:flex px-0 py-3 w-[60%]">
                                 NOMBRE
                             </div>
-                            <div className="hidden md:flex px-6 py-3">
+                            <div className="hidden md:flex px-6 py-3 w-[40%]">
                                 Celular
                             </div>
                         </th>

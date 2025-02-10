@@ -21,11 +21,11 @@ export default function Member({ membersActive }) {
                 <td className="px-2 md:px-6 py-4 text-[11px] md:text-[1rem]">
                     {mrn}
                 </td>
-                <td className='flex justify-around  md:text-[1rem]'>
-                    <div className="hidden md:flex px-2 md:px-6 md:pb-6">
+                <td className='flex  md:text-[1rem] w-[100%]'>
+                    <div className="hidden md:flex px-2 md:px-0 md:pb-6 w-[60%]">
                         {name}
                     </div>
-                    <div className="hidden md:flex px-6 ">
+                    <div className="hidden md:flex px-6 w-[40%] ">
                         {phone}
                     </div>
                 </td>
