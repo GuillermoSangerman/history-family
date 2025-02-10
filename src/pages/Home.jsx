@@ -6,8 +6,6 @@ export default function Home() {
     const contraseña = "Antequera1836"
     const correos = "historyFamilyAntequera@gmail.com"
 
-    const [correo, setCorreo] = useState("")
-
     const handleCorreo = (e) => {
         e.preventDefault()
         const formData = new FormData(e.target)
@@ -15,7 +13,6 @@ export default function Home() {
           email: formData.get('email'),
           password: formData.get('password')
         }
-        setCorreo(body)
         if (body.email === correos && body.password === contraseña) {
             navigate('/family')
             return;
@@ -31,13 +28,18 @@ export default function Home() {
     return (
         <div className='w-full min-h-screen flex flex-col md:flex-row md:justify-center items-center bg-black md:mx-auto'>
             <div>
-                <img className='hidden md:flex h-[300px]' src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmg2MTYwOWI4emV3Z25heGhkd2w0NTE5eHNteGg4MWt3am9ib3NsOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Gu8bT8ppVPEc9PKPiS/giphy.gif" alt="Family Book" />
+                <img className='hidden md:flex h-[300px]' 
+                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmg2MTYwOWI4emV3Z25heGhkd2w0NTE5eHNteGg4MWt3am9ib3NsOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Gu8bT8ppVPEc9PKPiS/giphy.gif" alt="Family Book" />
             </div>
             <form onSubmit={handleCorreo}  className="w-full md:max-w-md flex flex-col bg-black px-4">
             <div className="mb-5 mt-10">
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                     Correo: </label>
-                <input type="email" id="email" name='email' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="historyFamilyAntequera@gmail.com" required />
+                <input type="email" id="email" name='email' 
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700
+                  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500
+                   dark:focus:border-blue-500" placeholder="historyFamilyAntequera@gmail.com" autoComplete='on' required />
             </div>
             <div className="mb-5">
                 <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
