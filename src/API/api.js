@@ -14,9 +14,9 @@ export const historyFamily = [
         name: "Tania Martinez Mendoza",
         mrn: "026-0985-5132",
         userName: "tanis",
-        password: "123456",
+        password: "BarrioAn1836",
         email: "historyFamilyAnterquera@gmail.com",
         phone: "951-164-9813",
-        img: "/image-members/guillermo-sangerman.jpg"
+        img: "/image-members/user.svg"
     },
 ]
